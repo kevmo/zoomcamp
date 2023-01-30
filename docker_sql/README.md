@@ -1,3 +1,16 @@
+
+SELECT COUNT(*) 
+FROM green_taxi gt 
+WHERE gt.lpep_pickup_datetime 
+BETWEEN 2019-01-15 00:00:00 AND 2019-01-15 23:59:59
+AND gt.lpep_dropoff_datetime 
+BETWEEN 2019-01-15 00:00:00 AND 2019-01-15 23:59:59;
+
+
+
+
+-----
+
 docker run -it \
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
